@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/pygments.css">
+</head>
+<body>
+  <main id="main">
+
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <!-- ======= шаблон для поста ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Пример работы с ChatGPT на запросе аннотации по видео</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Категория</strong>: Ai</li>
+              <li><strong>Проект</strong>: AI-промтинг</li>
+              <li><strong>Статья опубликована</strong>: 2025-07-06</li>
+              <li><strong>Платформа</strong>: <a href="">AI-промтинг</a></li>
+            </ul>
+            <p>
+              <h2>Запрос аннотации у gpt4.1-o</h2>
+<ul>
+<li>Иногда требуется получить выжимку информации по интересующему видео-файлу</li>
+<li>тут нам на помощь приходят ИИ-ассистенты в виде чат-ботов разных популярных брендов.</li>
+</ul>
+<p>Далее будет идти пример разбора аннотации {https://youtu.be/eDYxxv1hnEM}.":</p>
+<h1>Полное техническое описание <code>docker init</code></h1>
+<h2>🎯 Введение</h2>
+<p><code>docker init</code> — это CLI‑утилита (начиная с Docker Desktop 4.27), которая автоматически генерирует базовые файлы для контейнеризации проекта:</p>
+<ul>
+<li><code>Dockerfile</code></li>
+<li><code>compose.yaml</code></li>
+<li><code>.dockerignore</code></li>
+<li><code>README.Docker.md</code></li>
+</ul>
+<p>Поддерживает Python, Node.js, Go, Rust, ASP.NET Core, Java, PHP и др.</p>
+<hr />
+<h2>🛠 Установка и запуск</h2>
+<h3>Требования:</h3>
+<ul>
+<li><strong>Docker Desktop</strong> версии <strong>4.27</strong> и выше.</li>
+</ul>
+<h3>Запуск:</h3>
+<p>```bash
+cd путь/к/проекту
+docker init</p>
+<p>Этапы интерактивной настройки</p>
+<p>1.Выбор платформы:</p>
+<p>? What application platform does your project use?
+  – Node (обнаружен)
+  – Python
+  – Go
+  – Rust
+  – ASP.NET Core, Java, PHP, Other</p>
+<p>2.Выбор версии среды выполнения
+3.Выбор менеджера пакетов / команды запуска</p>
+<p>Node: npm, yarn, pnpm</p>
+<p>Python: python app.py, gunicorn ...
+4.Указание порта приложения
+5.Генерация файлов:</p>
+<p>CREATED: .dockerignore
+CREATED: Dockerfile
+CREATED: compose.yaml
+CREATED: README.Docker.md
+✔ Your Docker files are ready!</p>
+<p>📁 Создаваемые файлы</p>
+<p>| Файл               | Назначение                                             |
+| ------------------ | ------------------------------------------------------ |
+| <code>.dockerignore</code>    | Исключение ненужных файлов из Docker-контекста         |
+| <code>Dockerfile</code>       | Сборка контейнера (FROM, COPY, RUN, CMD и т.д.)        |
+| <code>compose.yaml</code>     | Запуск приложения в Docker Compose                     |
+| <code>README.Docker.md</code> | Документация для запуска и сборки проекта в контейнере |</p>
+<p>Пример Dockerfile для Python:</p>
+<p>FROM python:3.12.4-slim as base
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+WORKDIR /app</p>
+<p>ARG UID=10001
+RUN adduser --disabled-password --gecos "" --uid $UID appuser
+COPY requirements.txt .
+RUN --mount=type=cache,target=/root/.cache \
+    pip install -r requirements.txt</p>
+<p>COPY . .
+USER appuser
+EXPOSE 3000
+CMD gunicorn 'my-api:app' --bind=0.0.0.0:3000</p>
+<p>🚀 Сборка и запуск</p>
+<p>docker compose up --build</p>
+<p>Проверка:</p>
+<p>curl http://localhost:3000</p>
+<h1>→ Node.js demo app using Express.</h1>
+<p>🔧 Кастомизация
+Проверка корректности ввода</p>
+<p>Смена базового образа</p>
+<p>Добавление сервисов в compose.yaml (например, PostgreSQL, Redis)</p>
+<p>Предупреждение о перезаписи уже существующих файлов</p>
+<p>README.Docker.md — обучающий файл для команды</p>
+<p>✅ Резюме
+Назначение: scaffold контейнеризации с минимальным усилием</p>
+<p>Для кого: разработчики, DevOps-инженеры, новички в Docker</p>
+<p>После init: рекомендуется адаптировать для продакшена</p>
+<p>🔗 Полезные ссылки
+Официальная документация Docker Init</p>
+<p>Spacelift Blog – docker init</p>
+<p>Пример на dev.to</p>
+<p>Если вы хотите, я могу сразу сгенерировать файл <code>docker-init-guide.md</code> и выдать его для скачивания. Скажите — и сделаю.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- конец карточки -->
+  <!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

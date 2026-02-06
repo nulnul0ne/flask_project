@@ -28,41 +28,39 @@ Flask Portfolio Website
 ⚙️ Простая и понятная структура проекта
 
 🗂 Структура проекта
-├───portfolio
-│   ├───info_security
-│   ├───pet_projects
-│   ├───tech_consultations
-│   ├───telegram_bots
-│   ├───video
-│   └───web_sites
-├───posts
-│   ├───gpt_exmpl
-│   ├───listlastreadabook
-│   ├───mypssbot
-│   ├───psswd_sec_beg
-│   └───tg_bot_exmpl
-└───static
-    ├───assets
-    │   ├───bootstrap
-    │   │   ├───css
-    │   │   └───js
-    │   ├───bootstrap-icons
-    │   │   └───fonts
-    │   ├───boxicons
-    │   │   ├───css
-    │   │   └───fonts
-    │   ├───glightbox
-    │   │   ├───css
-    │   │   └───js
-    │   ├───isotope-layout
-    │   ├───purecounter
-    │   ├───remixicon
-    │   ├───swiper
-    │   └───waypoints
-    ├───css
-    ├───img
-    │   └───portfolio
-    └───js
+.
+├── portfolio/                 # Разделы портфолио
+│   ├── info_security/         # Материалы по информационной безопасности
+│   ├── pet_projects/          # Личные pet-проекты
+│   ├── tech_consultations/    # Технические консультации и кейсы
+│   ├── telegram_bots/         # Проекты Telegram-ботов
+│   ├── video/                 # Видео-материалы
+│   └── web_sites/             # Веб-проекты и сайты
+│
+├── posts/                     # Статьи и публикации
+│   ├── gpt_exmpl/             # Примеры работы с GPT
+│   ├── listlastreadabook/     # Заметки о прочитанных книгах
+│   ├── mypssbot/              # Материалы по Telegram-боту
+│   ├── psswd_sec_beg/         # Основы безопасности паролей
+│   └── tg_bot_exmpl/          # Примеры Telegram-ботов
+│
+├── static/                    # Статические ресурсы
+│   ├── assets/                # Подключаемые библиотеки и UI-ресурсы
+│   │   ├── bootstrap/         # Bootstrap (CSS/JS)
+│   │   ├── bootstrap-icons/   # Иконки Bootstrap
+│   │   ├── boxicons/          # Набор иконок Boxicons
+│   │   ├── glightbox/         # Галереи и lightbox
+│   │   ├── isotope-layout/    # Фильтрация и сетки
+│   │   ├── purecounter/       # Анимированные счётчики
+│   │   ├── remixicon/         # Иконки Remixicon
+│   │   ├── swiper/            # Слайдеры
+│   │   └── waypoints/         # Scroll-триггеры
+│   │
+│   ├── css/                   # Пользовательские стили
+│   ├── js/                    # Пользовательские скрипты
+│   └── img/                   # Изображения
+│       └── portfolio/         # Превью проектов портфолио
+
 
 
 Названия каталогов могут незначительно отличаться в зависимости от конфигурации.
